@@ -1,0 +1,11 @@
+use milies;
+create table customers(id int  primary key auto_increment,name varchar(50),age int,status varchar(10));
+insert into customers (name,age,status) values("ravi",22,"major"),("varma",18,"major"),("sai",17,"minor");
+select * from customers;
+insert into customers(name,age) values("ravi1",18),("ravi2",16),("ravi3",17),("ravi4",19);
+select * from customers;
+select id,name,age,(id+age) as new_data from customers;
+select id,name,age,(id-age) as new_data from customers;
+select id,name,age,(id*10) as new_data from customers;
+select id,name,age,(age/2) as new_data from customers;
+select id,name,age,(age%2) as new_data from customers;
